@@ -1,12 +1,16 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Baggage Weight Check</title>
-    <script src="ex1.js"></script>
-</head>
-<body>
-    <h2>Baggage Weight Checker</h2>
-    <input type="text" id="weight" placeholder="Enter weight in kg">
-    <button onclick="checkBaggage()">Check Baggage</button>
-</body>
+    <head>
+        <title>Baggage Checker</title>
+        <script src="ex1.js"></script>
+    </head>
+    <body>
+        <h2>Baggage Weight Check</h2>
+        <input type="text" id="weight" placeholder="Enter baggage weight (kg)">
+        <button onclick="check()">Check Baggage</button>
+
+        <p>
+            <input type="text" id="removed" style="display:none;" placeholder="Enter kg to remove">
+            <button id="remB" onclick="removeWeight()" style="display:none;">Remove this much baggage (kg)</button>
+        </p>
+    </body>
 </html>
