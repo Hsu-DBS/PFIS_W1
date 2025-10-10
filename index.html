@@ -5,6 +5,7 @@
         <script src="ex2.js"></script>
         <script src="ex3.js"></script>
         <script src="ex4.js"></script>
+        <script src="ex5.js"></script>
     </head>
     <body>
         <h2>Baggage Weight Check</h2>
@@ -64,7 +65,18 @@
         <input type="text" id="inputStr" placeholder="Enter string">
         <button onclick="processInput()">Calculate</button>
 
-        <h3>Output:</h3>
         <p id="output"></p>
+
+
+        <h1>Exercise 5</h1>
+
+        <label for="inputStr">Enter Input:</label><br>
+        <input type="text" id="inputStr" placeholder="factors : multiples" size="40">
+        <br><br>
+
+        <button onclick="processInputCorrupt()">Strict (Corrupt Prepend)</button>
+        <button onclick="processInputSkipCorrupt()">Safe (Omit Invalid)</button>
+
+        <p id="output" style="font-weight:bold; margin-top:10px;"></p>
     </body>
 </html>
