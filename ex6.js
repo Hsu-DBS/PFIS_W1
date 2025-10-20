@@ -9,7 +9,7 @@ class MyGreeting extends HTMLElement {
         p { color: blue; font-size: 18px; }
         button { margin-top: 10px; }
       </style>
-      <p id="message">Hello from Shadow DOM!</p>
+      <p id="message">Welcome! Click 'Change Text' To Change Text</p>
       <button id="btn">Change Text</button>
     `;
 
@@ -17,7 +17,7 @@ class MyGreeting extends HTMLElement {
     const message = this.shadowRoot.querySelector("#message");
 
     button.addEventListener("click", () => {
-      message.textContent = "Text changed inside Shadow DOM!";
+      message.textContent = "Text Changed";
     });
   }
 }
